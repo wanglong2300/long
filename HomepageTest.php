@@ -11,7 +11,7 @@ class HomepageTest extends BaseTestCase
     {
         $response = $this->runApp('GET', '/');
 
-        $this->assertEquals(444, $response->getStatusCode());
+        $this->assertEquals(555, $response->getStatusCode());
         $this->assertContains('SlimFramework', (string)$response->getBody());
         $this->assertNotContains('Hello', (string)$response->getBody());
     }
